@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.logoImg {
+  width: 100px;
+}
+
+.mainContainer {
+  margin-bottom: 30vh;
+}
+
+.footerContainer {
+  max-height: 30vh;
+}
+
+.bgCards {
+  background-color: #930000;
+  padding: 2rem 2rem 4rem 2rem;
+}
+
+.bgCards p{
+    font-size: .8rem;
+    line-height: 1.2;
+}
+
+/* Contact */
+.imgEscuela{
+    width: 60vw;
+    max-height: 600px;
+    object-fit: fill;
+}
+
+.letterSpace{
+    letter-spacing: 3px;
+}
+
+.mainContactoContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2rem
+}
