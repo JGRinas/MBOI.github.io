@@ -135,7 +135,7 @@ body {
 /*index*/
 .indexPresentation{
   min-height: 90vh;
-  background-image: url('public/assets/images/bibliobackground.webp');
+  background-image: url('https://res.cloudinary.com/dca4jaeix/image/upload/v1697509051/bibliobackground_zsfa26.webp');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
