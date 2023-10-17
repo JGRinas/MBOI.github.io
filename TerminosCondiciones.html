@@ -13,59 +13,53 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="public/styles/styles.css" />
     <title>Mboi - Terminos y condiciones</title>
   </head>
   <body>
-    <header class="headerContainer w-100">
-      <nav
-        class="navbar navbar-expand-lg navbar-light bg-light w-100 d-flex justify-content-around p-4"
-      >
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="d-flex align-items-center">
-          <img class="logoImg" src="public/assets/images/logo.png" alt="" />
-          <p class="pt-3 fst-italic fw-bold text-muted">MBÓI</p>
+            <img class="" src="public/assets/images/logo.png" width="70px" alt="" />
         </div>
-
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">Inicio</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="#">Catálogo</a>
-          </li>
-          <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Áreas
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="Direccion.html">Dirección</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="ProcesosTecnicos.html">Procesos Técnicos</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="CirculacionPrestamos.html">Circulación y préstamos</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="Hemeroteca.html">Hemeroteca</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mr-auto">  <!-- Agregado mr-auto para alinear la búsqueda a la derecha -->
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="catalogo.html">Catálogo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="trabajos.html">Trabajos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="areasDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Áreas
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="areasDropdown">
+                        <a class="dropdown-item" href="Direccion.html">Dirección</a>
+                        <a class="dropdown-item" href="ProcesosTecnicos.html">Procesos Técnicos</a>
+                        <a class="dropdown-item" href="CirculacionPrestamos.html">Circulación y préstamos</a>
+                        <a class="dropdown-item" href="Hemeroteca.html">Hemeroteca</a>
+                    </div>
+                </li>
+            </ul>
+            <!-- Campo de búsqueda -->
+            <form class="form-inline my-2 my-lg-0 position-relative">
+              <input class="form-control mr-sm-2" style="width: 400px" type="search" placeholder="Search" aria-label="Search">
+              <div class="search-results hidden w-75">
+                  <ul id="resultSearch" class="w-100"></ul>
               </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="trabajos.html">Trabajos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contacto.html">Contácto</a>
-          </li>
-        </ul>
-
-        <form class="form-inline my-2 my-lg-0 d-flex">
-          <input
-            class="form-control mr-sm-2"
-            type="search"
-            placeholder="Buscar..."
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-            <img src="public/assets/icons/buscar.png" alt="" />
-          </button>
-        </form>
+          </form>
+        </div>
       </nav>
     </header>
     <main class="d-flex flex-column text-center m-5 justify-content-center">
@@ -171,11 +165,12 @@
     <footer class="footerContainer bg-light p-5">
       <ul class="nav justify-content-center border-bottom pb-3 mb-3">
         <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Inicio</a></li>
-        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Catálogo</a></li>
+        <li class="nav-item"><a href="catalogo.html" class="nav-link px-2 text-muted">Catálogo</a></li>
         <li class="nav-item"><a href="TerminosCondiciones.html" class="nav-link px-2 text-muted">Terminos y condiciones</a></li>
     </ul>
       <p class="text-center text-muted">© 2023 Mboi</p>
     </footer>
+    <script src="public/scripts/search.js"></script>
     <!-- jQuery y Popper.js (Necesarios para Bootstrap 4) -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
