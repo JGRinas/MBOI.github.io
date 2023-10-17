@@ -187,9 +187,11 @@ body {
 .libro-detalle{
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   flex-direction: row;
   border-radius: 10px;
-  padding: 10px;
+  padding: 20px;
+  background-color: #e0e0e0;
 }
 
 .libro-detalle img{
