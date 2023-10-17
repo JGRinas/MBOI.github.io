@@ -40,7 +40,7 @@ function mostrarLibros(libros) {
   const contenedor = document.getElementById("resultSearch");
   if (libros.length === 0) {
     contenedor.innerHTML =
-      '<li class="card d-flex flex-row text-center align-items-center" style="width: 400px; height: 150px"> <h5 class="card-title text-start">No se encontraron resultados</h5></li>';
+      '<li class="card d-flex flex-row text-center align-items-center" style="width: 340px; height: 100px; padding-left: 35px"> <h5 class="card-title text-start">No se encontraron resultados</h5></li>';
     return;
   }
   const items = libros

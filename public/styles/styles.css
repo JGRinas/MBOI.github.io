@@ -13,7 +13,7 @@ body {
 }
 
 .mainContainer {
-  margin: 3rem 0;
+  margin: 1rem 0;
 }
 
 .footerContainer {
@@ -133,6 +133,26 @@ body {
 }
 
 /*index*/
+.indexPresentation{
+  min-height: 90vh;
+  background-image: url('../assets/images/bibliobackground.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.indexPresentation h4{
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #2c2b2bb2;
+  color: #e0e0e0;
+}
+
 .imgBackground{
   width: 100vw;
   height: 500px;
@@ -183,6 +203,10 @@ body {
   font-weight: 400;
 }
 /*detalle del libro*/
+
+.containerBook{
+  min-height: 75vh;
+}
 
 .libro-detalle{
   display: flex;
